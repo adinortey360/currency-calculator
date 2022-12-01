@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcasino.a CMakeFiles/casino.dir/casino.c.o CMakeFiles/casino.dir/ddraw.c.o
+/usr/bin/ranlib libcasino.a

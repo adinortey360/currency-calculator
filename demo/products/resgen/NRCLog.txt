@@ -1,0 +1,31 @@
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] Regenerating '/home/adinortey/Developer/nappgui_sdk/src/demo/products/res/res_gui'
+[14:25:54] [OK] Heap Memory Staticstics
+[14:25:54] ============================
+[14:25:54] Total a/dellocations: 2308, 2308
+[14:25:54] Total bytes a/dellocated: 138568, 138568
+[14:25:54] Max bytes allocated: 67394
+[14:25:54] Effective reallocations: (0/46)
+[14:25:54] Real allocations: 3 pages of 65536 bytes
+[14:25:54] ============================
+[14:25:54] Config: ReleaseWithAssert

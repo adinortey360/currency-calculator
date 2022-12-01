@@ -1,0 +1,18 @@
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:54] ASSERT: Assertion failed (/home/fran/nbuild_1_2/src/src/utils/nlib/resgen.c:528): res1->index != res2->index
+[14:25:55] Regenerating '/home/adinortey/Developer/nappgui_sdk/src/howto/guihello/res/res'
+[14:25:55] [OK] Heap Memory Staticstics
+[14:25:55] ============================
+[14:25:55] Total a/dellocations: 317429, 317429
+[14:25:55] Total bytes a/dellocated: 1975873, 1975873
+[14:25:55] Max bytes allocated: 346711
+[14:25:55] Effective reallocations: (0/8)
+[14:25:55] Real allocations: 7 pages of 65536 bytes
+[14:25:55]                   2 pages greater than 65536 bytes
+[14:25:55] ============================
+[14:25:55] Config: ReleaseWithAssert
