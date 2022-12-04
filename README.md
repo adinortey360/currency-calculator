@@ -21,7 +21,7 @@ You will need to have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs
 
 1.  Clone the repository:
 
-`git clone https://github.com/your-username/currency-calculator.git`
+`git clone https://github.com/adinortey360/currency-calculator.git`
 
 2.  Install the dependencies:
 
