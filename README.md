@@ -5,7 +5,7 @@ A simple desktop application built with Angular and Electron that calculates the
 
 <img src="https://raw.githubusercontent.com/adinortey360/currency-calculator/main/src/assets/img/UIFig.png"
      alt="Figma UI Design"
-     style="float: left; width: 200px; " />
+     style="float: left; width: 400px; " />
 
 
 Getting Started
