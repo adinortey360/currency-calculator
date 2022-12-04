@@ -1,10 +1,7 @@
 <!-- form for adding multiple currencies and getting the results in one target currency. An add button to add more currencies -->
 
 <div>
-  <label for="target-currency">Target currency:</label>
-  <select [(ngModel)]="targetCurrency">
-    <option value="{{ curr.code }}" *ngFor="let curr of currencylist">{{ curr.name }}</option>
-  </select>
+
   
   <h3>Currencies to convert:</h3>
   
@@ -23,15 +20,20 @@
   
   <br />  <br />
 
-  <!-- Totals -->
-  <div>
-    <h3>Total: {{ total }}</h3>
-  </div>
-  
 
+  
+  <label for="target-currency">Target currency:</label>
+  <select [(ngModel)]="targetCurrency">
+    <option value="{{ curr.code }}" *ngFor="let curr of currencylist">{{ curr.name }}</option>
+  </select>
 
   <button type="button" (click)="calculateTotal()">Convert currencies</button>
 </div>
 
 
-<a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
+  <!-- Totals -->
+  <div class="footer">
+    <h3>Total: {{ total }}</h3>
+    <a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
+  </div>
+
