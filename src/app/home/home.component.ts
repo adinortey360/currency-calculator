@@ -33,6 +33,12 @@ export class HomeComponent implements OnInit {
     this.currencies.push({});
   }
 
+  //removeCurrency
+  removeCurrency(index: number) {
+    // Remove the currency from the currencies array
+    this.currencies.splice(index, 1);
+  }
+
   public async calculateTotal(): Promise<void> {
     this.total = 0;
   
