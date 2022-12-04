@@ -6,7 +6,7 @@
   <div class="currency-blocks">
     <div class="currency-block" *ngFor="let currency of currencies; let indexOfelement=index;">
       <button class="removebtn" (click)="removeCurrency(indexOfelement)">
-        <img src="/assets/img/close.svg" />
+        <img src="assets/img/close.svg" />
       </button>
       <div class="currency-to-convert">
         <select id="currency-{{ indexOfelement }}-type" class="currency-block-switch" (change)="listCurrencies()">
@@ -19,7 +19,7 @@
 
       <button class="currency-block" type="button" id="add-currency-button" (click)="addCurrency();">
         
-        <img src="/assets/img/addc.svg" />
+        <img src="assets/img/addc.svg" />
       </button>
   </div>
 
@@ -36,7 +36,7 @@
   </select>
 
   <button type="button" class="calculatebtn" (click)="calculateTotal(); listCurrencies()">
-    <img src="/assets/img/check.svg" />
+    <img src="assets/img/check.svg" />
   </button>
 </div>
 

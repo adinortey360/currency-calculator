@@ -7,5 +7,6 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
-    createWindow()
+    createWindow();
+    win.setMenu(null);
 })

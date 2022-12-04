@@ -5,13 +5,13 @@
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url('/assets/fonts/Inter-Black.ttf') format('truetype');
-  src: url('/assets/fonts/Inter-Bold.ttf') format('truetype');
-  src: url('/assets/fonts/Inter-ExtraBold.ttf') format('truetype');
-  src: url('/assets/fonts/Inter-ExtraLight.ttf') format('truetype');
-  src: url('/assets/fonts/Inter-Medium.ttf') format('truetype');
-  src: url('/assets/fonts/Inter-Regular.ttf') format('truetype');
-  src: url('/assets/fonts/Inter-SemiBold.ttf') format('truetype');
+  src: url('assets/fonts/Inter-Black.ttf') format('truetype');
+  src: url('assets/fonts/Inter-Bold.ttf') format('truetype');
+  src: url('assets/fonts/Inter-ExtraBold.ttf') format('truetype');
+  src: url('assets/fonts/Inter-ExtraLight.ttf') format('truetype');
+  src: url('assets/fonts/Inter-Medium.ttf') format('truetype');
+  src: url('assets/fonts/Inter-Regular.ttf') format('truetype');
+  src: url('assets/fonts/Inter-SemiBold.ttf') format('truetype');
 }
 
 
