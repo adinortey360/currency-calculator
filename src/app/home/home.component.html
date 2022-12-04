@@ -3,11 +3,7 @@
 <div>
   <label for="target-currency">Target currency:</label>
   <select [(ngModel)]="targetCurrency">
-    <option value="USD">United States Dollar (USD)</option>
-    <option value="EUR">Euro (EUR)</option>
-    <option value="GBP">British Pound (GBP)</option>
-    <option value="INR">Indian Rupee (INR)</option>
-    <option value="JPY">Japanese Yen (JPY)</option>
+    <option value="{{ curr.code }}" *ngFor="let curr of currencylist">{{ curr.name }}</option>
   </select>
   
   <h3>Currencies to convert:</h3>
@@ -17,11 +13,7 @@
       <label for="currency-{{ indexOfelement }}">Currency {{ indexOfelement }}:</label>
       <input type="number" id="currency-{{ indexOfelement }}" value="1" min="0">
       <select id="currency-{{ indexOfelement }}-type">
-        <option value="USD">United States Dollar (USD)</option>
-        <option value="EUR">Euro (EUR)</option>
-        <option value="GBP">British Pound (GBP)</option>
-        <option value="INR">Indian Rupee (INR)</option>
-        <option value="JPY">Japanese Yen (JPY)</option>
+        <option value="{{ curr.code }}" *ngFor="let curr of currencylist">{{ curr.name }}</option>
       </select>
     </div>
   </div>

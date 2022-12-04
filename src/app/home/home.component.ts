@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   currencies: any = [];
+  currencylist: any = [];
 
   targetCurrency: any;
 
@@ -16,6 +17,14 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    fetch('https://openexchangerates.org/api/currencies.json')
+    .then(response => response.json())
+    .then(json => {
+      // Loop over the currencies and add them to the currencies array
+      for (const code in json) {
+        this.currencylist.push({ name: json[code], code: code });
+      }
+    });
 
   }
 
@@ -25,7 +34,7 @@ export class HomeComponent implements OnInit {
   }
 
   public async calculateTotal(): Promise<void> {
-    
+    this.total = 0;
   
     // Loop over the currencies and convert each one to the target currency
     for (const currency of this.currencies) {
