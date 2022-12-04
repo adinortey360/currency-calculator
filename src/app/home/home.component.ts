@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
 
   targetCurrency: any;
 
+  total: number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -23,7 +25,7 @@ export class HomeComponent implements OnInit {
   }
 
   public async calculateTotal(): Promise<void> {
-    let total: number = 0;
+    
   
     // Loop over the currencies and convert each one to the target currency
     for (const currency of this.currencies) {
@@ -39,11 +41,11 @@ export class HomeComponent implements OnInit {
   
       // Add the converted currency to the total
       // Add the converted currency to the total
-      total += await convertedCurrency;
+      this.total += await convertedCurrency;
     }
   
     // Display the total
-    console.log(total);
+    console.log(this.total);
   }
  
   
@@ -56,12 +58,14 @@ export class HomeComponent implements OnInit {
   }
   
   public async getConversionRate(from: string, to: string): Promise<number> {
-    // Use the Open Exchange Rates API to get the conversion rate
-    const response = fetch(`https://openexchangerates.org/api/latest.json?app_id=&base=${from}&symbols=${to}`);
-    const json = (await response).json();
-  
-    return json.then((data: any) => {
-      return data.rates[to];
-    });
+    // Use the https://open.er-api.com/v6/latest/USD to get the conversion rate
+    const url = `https://open.er-api.com/v6/latest/${from}`;
+
+    // Get the conversion rate from the API add header for
+    const response = await fetch(url);
+    const data = await response.json();
+
+    // Return the conversion rate
+    return data.rates[to];
   }
 }
