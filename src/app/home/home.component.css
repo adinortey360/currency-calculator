@@ -1,0 +1,83 @@
+.converter-page {
+    padding: 60px;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ADF385;
+}
+
+.calculatebtn {
+    background-color: #ADF385;
+    border-radius: 50%;
+    height: 72px;
+    width: 72px;
+    display: block;
+    align-items: center;
+    border: none;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+}
+
+
+.currency-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.currency-block {
+    background-color: #19251E;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    padding: 0px 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none !important;
+}
+
+.currency-block-switch {
+    border-radius: 10px;
+    width: 149px;
+    color: #ADF385;
+    height: 25px;
+    position: relative;
+    background: none;
+    border: none;
+    font-weight: 700;
+}
+
+.currency-block-input {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #ADF385;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.target-currency-field {
+    width: 596px;
+    height: 64px;
+    background: #19251E;
+    border-radius: 18px;
+    border: none !important;
+    color: #ADF385;
+    font-size: 19px;
+    position: absolute;
+    padding: 0px 5px;
+    left: 50%;
+    bottom: 25%;
+    transform: translate(-50%, -50%);
+}
