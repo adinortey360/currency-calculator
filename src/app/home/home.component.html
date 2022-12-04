@@ -5,7 +5,7 @@
   <h3 class="title">USD, GBP --> USD</h3>
   <div class="currency-blocks">
     <div class="currency-block" *ngFor="let currency of currencies; let indexOfelement=index;">
-      <button (click)="removeCurrency(indexOfelement)">x</button>
+      <button class="removebtn" (click)="removeCurrency(indexOfelement)">x</button>
       <div class="currency-to-convert">
         <select id="currency-{{ indexOfelement }}-type" class="currency-block-switch">
           <option value="{{ curr.code }}" *ngFor="let curr of currencylist">{{ curr.name }}</option>
@@ -15,7 +15,10 @@
     </div>
 
 
-      <button class="currency-block" type="button" id="add-currency-button" (click)="addCurrency()">Add currency</button>
+      <button class="currency-block" type="button" id="add-currency-button" (click)="addCurrency()">
+        
+        <img src="/assets/img/addc.svg" />
+      </button>
   </div>
 
   
@@ -30,13 +33,15 @@
     <option value="{{ curr.code }}" *ngFor="let curr of currencylist">{{ curr.name }}</option>
   </select>
 
-  <button type="button" class="calculatebtn" (click)="calculateTotal()">C</button>
+  <button type="button" class="calculatebtn" (click)="calculateTotal()">
+    <img src="/assets/img/check.svg" />
+  </button>
 </div>
 
 
   <!-- Totals -->
   <div class="footer">
     <h3>Total: {{ total }}</h3>
-    <a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
+    <a class="credits" href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
   </div>
 

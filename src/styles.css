@@ -1,8 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+/* import Inter fonts from assets folder all ttf format Black, Bold, ExtraBold, ExtraLight, Light, Medium, Regular, SemiBold, Thin */
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/assets/fonts/Inter-Black.ttf') format('truetype');
+  src: url('/assets/fonts/Inter-Bold.ttf') format('truetype');
+  src: url('/assets/fonts/Inter-ExtraBold.ttf') format('truetype');
+  src: url('/assets/fonts/Inter-ExtraLight.ttf') format('truetype');
+  src: url('/assets/fonts/Inter-Medium.ttf') format('truetype');
+  src: url('/assets/fonts/Inter-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/Inter-SemiBold.ttf') format('truetype');
+}
+
 
 body {
     background-color: #0B150F;
     margin: 0;
+    font-family: 'Inter';
 }
 
 .footer {
