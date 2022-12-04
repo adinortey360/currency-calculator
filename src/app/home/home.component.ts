@@ -1,38 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { CurrencyConversionService } from '../currency-conversion.service';
 
 @Component({
-selector: 'app-home',
-templateUrl: './home.component.html',
-styleUrls: ['./home.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-currencies = ['USD', 'EUR', 'GBP', 'CAD'];
-targetCurrency: any;
-currencyValues: any = {};
-convertedAmount: any;
 
-constructor() { }
+  currencies: any = [];
 
-ngOnInit() {
-this.currencies.forEach(currency => this.currencyValues[currency] = 0);
-}
+  targetCurrency: any;
 
-addCurrency() {
-this.currencies.push('');
-this.currencyValues[''] = 0;
-}
+  constructor() { }
 
-convertCurrencies() {
-let totalAmount = 0;
+  ngOnInit(): void {
 
-for (const currency in this.currencyValues) {
-  if (currency !== 'targetCurrency') {
-    // const convertedAmount = this.currencyConversionService.convert(currency, this.targetCurrency, this.currencyValues[currency]);
-    // totalAmount += convertedAmount;
   }
-}
 
-this.convertedAmount = totalAmount;
-}
+  addCurrency() {
+    // Add new field to currencies array
+    this.currencies.push({});
+  }
+
+  public calculateTotal(): void {
+    // Calculate the total value of all currencies in the target currency
+  }
+
 }

@@ -1,20 +1,33 @@
-<h1>Currency Converter</h1>
-<form>
-  <div class="form-group">
-    <label for="targetCurrency">Target Currency</label>
-    <select class="form-control" id="targetCurrency" [(ngModel)]="targetCurrency" name="targetCurrency">
-      <option *ngFor="let currency of currencies" [value]="currency">
-        {{currency}}
-      </option>
-    </select>
+<!-- form for adding multiple currencies and getting the results in one target currency. An add button to add more currencies -->
+
+<div>
+  <label for="target-currency">Target currency:</label>
+  <select id="target-currency" id="targetCurrency">
+    <option value="USD">United States Dollar (USD)</option>
+    <option value="EUR">Euro (EUR)</option>
+    <option value="GBP">British Pound (GBP)</option>
+    <option value="INR">Indian Rupee (INR)</option>
+    <option value="JPY">Japanese Yen (JPY)</option>
+  </select>
+  
+  <h3>Currencies to convert:</h3>
+  
+  <div *ngFor="let currency of currencies;">
+    <div class="currency-to-convert">
+      <label for="currency">Currency:</label>
+      <input type="number" id="currency" value="1" min="0">
+      <select id="currency-type">
+        <option value="USD">United States Dollar (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="GBP">British Pound (GBP)</option>
+        <option value="INR">Indian Rupee (INR)</option>
+        <option value="JPY">Japanese Yen (JPY)</option>
+      </select>
+    </div>
   </div>
-  <div class="form-group" *ngFor="let currency of currencies">
-    <label for="{{currency}}">{{currency}} Amount</label>
-    <input type="number" class="form-control" id="{{currency}}" [(ngModel)]="currencyValues[currency]" min="0" name="{{currency}}">
-  </div>
-  <button type="button" class="btn btn-primary" (click)="addCurrency()">Add Currency</button>
-  <button type="submit" class="btn btn-primary" (click)="convertCurrencies()">Convert</button>
-</form>
-<p *ngIf="convertedAmount">
-  Total amount in {{targetCurrency}}: {{convertedAmount}}
-</p>
+  
+  <button type="button" id="add-currency-button" (click)="addCurrency()">Add currency</button>
+  
+  <br />  <br />
+  <button type="button" (click)="calculateTotal()">Convert currencies</button>
+</div>
