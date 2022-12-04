@@ -17,5 +17,7 @@ import { BrowserModule } from '@angular/platform-browser';
     ],
     exports: [HomeComponent]
 })
-export class HomeModule { }
+export class HomeModule { 
+    
+}
 

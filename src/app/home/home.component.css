@@ -41,6 +41,7 @@
     flex-wrap: nowrap;
     align-items: center;
     gap: 30px;
+    overflow-y: auto;
 }
 
 .currency-block {
@@ -56,14 +57,26 @@
     border: none !important;
 }
 
+.currency-block:hover .removebtn {
+    display: block;
+}
+
 .removebtn {
-    background: #0f1e15;
+    background: #293930;
     border: none;
     color: #fff;
     position: absolute;
     border-radius: 50%;
-    margin-top: -10pc;
-    margin-right: -13pc;
+    margin-top: -9.5pc;
+    margin-right: -12pc;
+    height: 25px;
+    width: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+.removebtn img {
+    height: 10px;
 }
 
 .currency-block-switch {
@@ -72,18 +85,20 @@
     color: #ADF385;
     height: 25px;
     position: relative;
-    background: none;
-    border: none;
+    background: #19251E;
+    border: none !important;
     font-weight: 700;
 }
 
 .currency-block-input {
     width: 100%;
     background: none;
-    border: none;
+    border: none !important;
     color: #ADF385;
     font-size: 40px;
     font-weight: 500;
+    font-family: 'Inter';
+    overflow: none;
 }
 
 .target-currency-field {

@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  currencies: any = [];
+  currencies: any = [{}];
   currencylist: any = [];
 
-  targetCurrency: any;
+  targetCurrency: any = "USD";
+  currencycsv: any = "FROM";
 
   total: number = 0;
 
@@ -28,9 +29,10 @@ export class HomeComponent implements OnInit {
 
   }
 
-  addCurrency() {
+  async addCurrency() {
     // Add new field to currencies array
-    this.currencies.push({});
+    await this.currencies.push({});
+    // this.listCurrencies();
   }
 
   //removeCurrency
@@ -61,6 +63,26 @@ export class HomeComponent implements OnInit {
   
     // Display the total
     console.log(this.total);
+  }
+
+
+
+
+  listCurrencies() {
+      this.currencycsv = "";
+
+      // get all currencies for each and create comma separated list
+      for (const currency of this.currencies) {
+        //get index
+        const index = this.currencies.indexOf(currency);
+        //input field of value is id=currency-
+        const currencytype = (document.getElementById(`currency-${index}-type`) as HTMLInputElement).value;
+        this.currencycsv += currencytype + ",";
+      }
+
+      //remove last character at end of currencycsv
+      this.currencycsv = this.currencycsv.slice(0, -1);
+
   }
  
   

@@ -2,20 +2,22 @@
 
 <div class="converter-page">
 
-  <h3 class="title">USD, GBP --> USD</h3>
+  <h3 class="title">{{ currencycsv }} --> {{ targetCurrency }}</h3>
   <div class="currency-blocks">
     <div class="currency-block" *ngFor="let currency of currencies; let indexOfelement=index;">
-      <button class="removebtn" (click)="removeCurrency(indexOfelement)">x</button>
+      <button class="removebtn" (click)="removeCurrency(indexOfelement)">
+        <img src="/assets/img/close.svg" />
+      </button>
       <div class="currency-to-convert">
-        <select id="currency-{{ indexOfelement }}-type" class="currency-block-switch">
+        <select id="currency-{{ indexOfelement }}-type" class="currency-block-switch" (change)="listCurrencies()">
           <option value="{{ curr.code }}" *ngFor="let curr of currencylist">{{ curr.name }}</option>
         </select>
-        <input class="currency-block-input" type="number" id="currency-{{ indexOfelement }}" value="1" min="0">
+        <input class="currency-block-input" type="number" id="currency-{{ indexOfelement }}" value="0" min="0">
       </div>
     </div>
 
 
-      <button class="currency-block" type="button" id="add-currency-button" (click)="addCurrency()">
+      <button class="currency-block" type="button" id="add-currency-button" (click)="addCurrency();">
         
         <img src="/assets/img/addc.svg" />
       </button>
@@ -28,12 +30,12 @@
 
 
   
-  <select [(ngModel)]="targetCurrency" class="target-currency-field">
+  <select [(ngModel)]="targetCurrency" class="target-currency-field" (change)="listCurrencies()">
     <option value="">Choose target currency</option>
     <option value="{{ curr.code }}" *ngFor="let curr of currencylist">{{ curr.name }}</option>
   </select>
 
-  <button type="button" class="calculatebtn" (click)="calculateTotal()">
+  <button type="button" class="calculatebtn" (click)="calculateTotal(); listCurrencies()">
     <img src="/assets/img/check.svg" />
   </button>
 </div>
@@ -41,7 +43,7 @@
 
   <!-- Totals -->
   <div class="footer">
-    <h3>Total: {{ total }}</h3>
+    <h3>Total: {{ total | currency: targetCurrency: false: '.2' }}</h3>
     <a class="credits" href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
   </div>
 
